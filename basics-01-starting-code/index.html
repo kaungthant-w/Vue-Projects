@@ -9,8 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://unpkg.com/vue@next" defer></script>
     <script src="app.js" defer></script>
+    <script src="https://unpkg.com/vue@3"></script>
   </head>
   <body>
     <header>
@@ -18,7 +18,11 @@
     </header>
     <section id="user-goal">
       <h2>My Course Goal</h2>
-      <p></p>
+      <p>{{ courseGoal }}</p>
+      <p v-for=" data in arrayData">{{ data }}</p>
+      <p>{{ boolData }}</p>
+      <p>{{ courseNum }}</p>
     </section>
+
   </body>
 </html>
