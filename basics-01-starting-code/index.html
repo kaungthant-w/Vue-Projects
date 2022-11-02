@@ -24,6 +24,7 @@
       <p v-for=" data in arrayData">{{ data }}</p>
       <p>{{ boolData }}</p>
       <p>{{ courseNum }}</p>
+      <p>{{courseGoalA}}</p>
 
       <!-- Binding Attributes with the v-bind Directi🇻🇪  -->
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo omnis maxime dolorem esse, consequuntur <a v-bind:href="vueLink">AProgrammer</a> architecto.</h3>
@@ -31,6 +32,7 @@
       <!-- 005 Understanding methods in Vue Apps -->
       <!-- 006 Working with Data inside of a Vue App -->
       <p>{{ outputGoal() }}</p>
+      <p v-html="outputGoal()"></p>
     </section>
 
   </body>
