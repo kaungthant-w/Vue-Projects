@@ -22,9 +22,12 @@
       <!-- 003 Interpolation and Data Binding -->
       <p>{{ courseGoalA }}</p>
       <p v-for=" data in arrayData">{{ data }}</p>
+      <!-- <p v-html="courseGoalC"></p> -->
+      <p v-html="outputGoal()"></p>
       <p>{{ boolData }}</p>
       <p>{{ courseNum }}</p>
       <p>{{courseGoalB}}</p>
+      <p>{{outputGoal()}}</p>
 
       <!-- Binding Attributes with the v-bind Directi🇻🇪  -->
       <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo omnis maxime dolorem esse, consequuntur <a v-bind:href="vueLink">AProgrammer</a> architecto.</h3>
